@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride Fare Prediction System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <header class="header">
+    <h1>Ride Fare Prediction System Using Multilinear Regression</h1>
+  </header>
+  <div class="theme-switch-container">
+    <button id="themeToggle">🌙</button>
+  </div>
+  <main class="main">
+    <div class="form-container">
+      <form id="fareForm">
+        <div class="form-group">
+          <label for="duration">Duration (minutes):</label>
+          <input type="number" id="duration" name="duration" required>
+        </div>
+        <div class="form-group">
+          <label for="distance">Distance (km):</label>
+          <input type="number" id="distance" name="distance" required>
+        </div>
+        <div class="form-group">
+          <label for="ride_charge">Ride Charge (₹):</label>
+          <input type="number" id="ride_charge" name="ride_charge" required>
+        </div>
+        
+        <button type="submit">Predict Fare</button>
+      </form>
+      <div id="result" class="result"></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
